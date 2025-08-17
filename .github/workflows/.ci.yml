@@ -39,7 +39,7 @@ jobs:
 
       - run: |
           if pm2 list | grep -q "online"; then
-            pm2 stop all
+            c
           else
             echo "No PM2 processes to stop"
           fi
@@ -76,6 +76,8 @@ jobs:
           touch .env
           echo "${{ secrets.PROD }}" > .env
 
-      - run: pm2 start all
+      - run: |
+          cd backend
+          pm2 start server/src/server.js --name backend
 
       - run: pm2 restart all
