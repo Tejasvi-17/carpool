@@ -235,3 +235,4 @@ describe('Booking Controller', () => {
         expect(res.status.calledWith(400)).to.be.true;
     });
 });
+
