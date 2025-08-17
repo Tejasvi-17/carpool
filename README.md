@@ -1,3 +1,7 @@
+Perfect 👍 Thanks for clarifying. Let’s make the README even simpler so it matches exactly what you want:
+
+---
+
 # Carpool Application
 
 The Carpool application helps users share rides within campuses or across cities by matching routes and schedules. Drivers can offer rides and passengers can find rides that fit their pickup/dropoff and time window. The app reduces cost, congestion, and carbon footprint while providing a simple, secure experience.
@@ -58,12 +62,12 @@ Carpool/
 
 ### Backend (Node.js/Express)
 
-* `server.js`: Entry point for the Express server.
-* `config/db.js`: Database connection setup.
-* `controllers/`: Logic for authentication, booking, and rides.
-* `middleware/authMiddleware.js`: Handles authentication checks.
-* `models/`: Mongoose models for User, Ride, Booking.
-* `routes/`: API endpoints for auth, booking, and rides.
+* `server.js`: Entry point for the Express server
+* `config/db.js`: Database connection setup
+* `controllers/`: Logic for authentication, booking, and rides
+* `middleware/authMiddleware.js`: Handles authentication checks
+* `models/`: Mongoose models for User, Ride, Booking
+* `routes/`: API endpoints for auth, booking, and rides
 
 ### Frontend (React/Tailwind CSS)
 
@@ -75,33 +79,30 @@ Carpool/
 
 ## Setup Instructions
 
-1. **Install dependencies**
+1. **Install all dependencies**
 
    ```bash
    npm run install-all
    ```
 
-   (Installs dependencies for both backend and frontend)
-
 2. **Configure environment variables**
    Add your database URI and other secrets in `backend/config/db.js` or a `.env` file.
 
-3. **Run the backend**
+3. **Start the app**
 
    ```bash
-   cd backend
    npm start
    ```
 
-4. **Run the frontend**
-
-   ```bash
-   cd frontend
-   npm start
-   ```
+   This starts both backend and frontend at once.
 
 ## Usage
 
-* Access the frontend at [http://localhost:3000](http://localhost:3000)
-* Backend API runs at [http://localhost:5001](http://localhost:5001) (default)
+* Frontend: [http://localhost:3000](http://localhost:3000)
+* Backend: [http://localhost:5000](http://localhost:5000)
 
+---
+
+✅ Now it’s simple: `npm run install-all` then `npm start`.
+
+Do you also want me to include a **sample `.env` file** snippet in the README (with `MONGO_URI`, `JWT_SECRET`, etc.) so setup is quicker for others?
